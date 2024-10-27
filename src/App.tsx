@@ -1,16 +1,11 @@
-import React from 'react';
-import './App.css';
-import {TitleBar} from "./components/layout/title-bar/TitleBar";
-import {Tracker} from "./components/tracker/Tracker";
-import {useTrackerHelper} from "./components/tracker/trackerHelper";
+import ShitTracker from "./components/ai/shit-tracker";
 
 function App() {
-  const trackerHelper = useTrackerHelper((x) => console.log(x));
-
-  return (<>
-    <TitleBar/>
-    <Tracker {...trackerHelper}/>
-  </>);
+  return (
+    <div className="App">
+      <ShitTracker />
+    </div>
+  );
 }
 
 export default App;
